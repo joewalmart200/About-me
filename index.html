@@ -1,21 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>joewalmart | About Me</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS File -->
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>joewalmart | About Me</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0f0f0f;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background: #111;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-weight: 700;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+section {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+#intro span {
+    color: #00ffcc;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #00ffcc;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 12px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #222;
+}
+
+.contact-box a {
+    display: block;
+    margin: 10px 0;
+    color: #00ffcc;
+    text-decoration: none;
+}
+</style>
 </head>
 
 <body>
 
 <nav>
-    <h1 class="logo">Joe walmart</h1>
+    <h1 class="logo">Joe Walmart</h1>
     <div class="nav-links">
         <a href="#intro">Intro</a>
         <a href="#whatido">What I Do</a>
@@ -59,6 +137,11 @@
     </div>
 </section>
 
-<script src="script.js"></script>
+<script>
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
 </body>
 </html>
